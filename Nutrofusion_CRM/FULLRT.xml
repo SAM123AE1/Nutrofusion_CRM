@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Nutro_CRM_listenerUtility.ListenerImplementationclass"></listener>
+</listeners>
+  <test  parallel="classes" thread-count="5" name="Test">
+    <classes>
+      <class name="Nutrofusion_CRM.Create_SalesOrder"/>
+      <class name="Nutrofusion_CRM.Product_sales_org"/>
+      <class name="Nutrofusion_CRM.Organization_Customer"/>
+      <class name="Nutrofusion_CRM.Create_PurchaseOrder"/>
+      <class name="Nutrofusion_CRM.Product_Supplier"/>
+      <class name="Nutrofusion_CRM.CreateCustomerandCheckintheLIST"/>
+      <class name="Nutrofusion_CRM.CreateCustomer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
